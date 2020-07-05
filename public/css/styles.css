@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main-content {
+  padding: 0 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.site-header {
+  margin-bottom: 40px;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.button {
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+  border-radius: 0;
+  font: inherit;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background: #b7b6b6;
+}
+
+.alert {
+  background: darkgray;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.alert span {
+  background-color: red;
+  display: inline-flex;
+  padding: 2px 6px;
+  color: white;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-controll {
+  flex: 1;
+}
+
+.form-input {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 0;
+  font: inherit;
+  outline: 1px solid rgba(0, 0, 0, .2);
+}
+
+.submit-button {
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+  border-radius: 0;
+  font: inherit;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.results {
+  margin-top: 40px;
+  clear: both;
+}
+
+.card {
+  width: calc(50% - 16px);
+  float: left;
+  margin: 16px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid lightgray;
+  text-decoration: none;
+}
+
+.card:nth-child(odd) {
+  margin-left: 0;
+}
+
+.card:nth-child(even) {
+  margin-right: 0;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.name {
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-top: 8px;
+}
+
