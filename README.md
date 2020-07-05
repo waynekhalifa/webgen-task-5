@@ -9,7 +9,7 @@ Uses the following technologies:
 ```sh
 # in main directory
 npm install
-- [a link](https://github.com/user/repo/blob/branch/other_file.md)
+- [a link](https://github.com/user/repo/blob/branch/other_file.md).
 npm start or npm run dev
 ```
 
@@ -17,7 +17,7 @@ npm start or npm run dev
 
 ```sh
 # heroku url
-- [Heroku url](http://webgen-task-five.herokuapp.com/)
+- [Heroku url](http://webgen-task-five.herokuapp.com/).
 # video overview
-- [Youtube video](https://www.youtube.com/watch?v=G8T2ydJzv40)
+- [Youtube video](https://www.youtube.com/watch?v=G8T2ydJzv40).
 ```
