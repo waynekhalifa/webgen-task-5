@@ -1,10 +1,13 @@
 const form = document.querySelector(".form");
 const mainContent = document.querySelector(".main-content");
+const results = document.querySelector(".results");
+const alert = document.createElement("div");
 
 if (form) form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
+  clearResults(results);
 
   const query = document.querySelector(".form-input").value;
   const p = document.createElement("p");
@@ -21,9 +24,9 @@ function handleSubmit(event) {
 }
 
 function displayUsers(data) {
-  document.querySelector(".alert").remove();
+  if (alert) alert.remove();
+
   mainContent.removeChild(mainContent.lastChild);
-  const results = document.querySelector(".results");
 
   const users = data.items.slice(0, 10);
 
@@ -50,7 +53,7 @@ function displayUsers(data) {
 
 function displayValidationError() {
   mainContent.removeChild(mainContent.lastChild);
-  const alert = document.createElement("div");
+
   alert.className = "alert";
   const message = document.createTextNode("Search field cannot be empty");
   const error = document.createElement("span");
@@ -60,4 +63,10 @@ function displayValidationError() {
   alert.appendChild(error);
 
   mainContent.appendChild(alert);
+}
+
+function clearResults(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
 }

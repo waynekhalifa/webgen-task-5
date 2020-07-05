@@ -77,5 +77,5 @@ app.get("/search", require("connect-ensure-login").ensureLoggedIn(), function (
 const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
-  console.log(`app listening at https://webgen-task-five.herokuapp.com/:${port}`);
+  console.log(`app listening at http://localhost:8000/:${port}`);
 });
