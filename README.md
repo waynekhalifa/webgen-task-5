@@ -17,7 +17,7 @@ npm start or npm run dev
 
 ```sh
 # heroku url
-[a link](http://webgen-task-five.herokuapp.com/)
+[Heroku url](http://webgen-task-five.herokuapp.com/)
 # video overview
-[a link](https://www.youtube.com/watch?v=G8T2ydJzv40)
+[Youtube video](https://www.youtube.com/watch?v=G8T2ydJzv40)
 ```
